@@ -1,0 +1,14 @@
+mixin button(link, text)
+  // Button : BEGIN
+  table.button&attributes(attributes)
+    tr
+      td(align="center")
+        a(href=link, target="_blank", rel="nofollow noopener")
+          <!--[if mso | IE]>
+          <i style="letter-spacing: 50px; mso-font-width: -100%; mso-text-raise: 24pt;">&nbsp;</i>
+          <![endif]-->
+          span(style="mso-text-raise: 12pt;")= text
+          <!--[if mso | IE]>
+          <i style="letter-spacing: 50px; mso-font-width: -100%;">&nbsp;</i>
+          <![endif]-->
+  // Button : END

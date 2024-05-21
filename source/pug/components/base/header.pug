@@ -1,0 +1,31 @@
+mixin header()
+  table.header(width="100%")
+    tr
+      td.gap-bottom
+        table.header__container(width="100%")
+          tr
+            td.stack-row(align="center")
+              <!--[if mso | IE]>
+              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+              <td width="290" valign="middle">
+              <![endif]-->
+              div.stack-column
+                table(width="100%")
+                  tr
+                    td.header__content(align="left")
+                      a(href="#", target="_blank", rel="nofollow noopener")
+                        img(src="https://via.placeholder.com/200x50.png", alt="Лого", width="200", height="50")
+              <!--[if mso | IE]>
+              </td><td width="310" valign="middle">
+              <![endif]-->
+              div.stack-column
+                table(width="100%")
+                  tr
+                    td.header__content(align="right")
+                      p.mobile-text-left Lorem ipsum
+              <!--[if mso | IE]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->

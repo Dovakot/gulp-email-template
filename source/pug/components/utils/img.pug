@@ -1,0 +1,5 @@
+mixin img(path, image, format, width, altText, padding)
+  table(bgcolor="#ffffff" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 600px; margin: 0 auto;")
+    tr
+      td(width="100%" valign="top" style="padding: " + padding + "; margin: 0; overflow: hidden;mso-hide:all;")
+        img(src=path + "/" + image + "@2x." + format, width= width, height="auto", alt= altText, style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;")

@@ -1,0 +1,20 @@
+// тут стили для адаптива, и иные, не поддерживаемые в инлайне
+
+a {
+  opacity: 1;
+}
+
+@include vp-596 {
+  .stack-column {
+    display: block !important;
+    max-width: 100% !important;
+  }
+
+  .mobile-text-left {
+    text-align: left !important;
+  }
+
+  .border-left {
+    border-left: none !important;
+  }
+}

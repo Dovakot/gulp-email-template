@@ -1,0 +1,5 @@
+@mixin vp-596 {
+  @media screen and (max-width: $vp-596) {
+    @content;
+  }
+}

@@ -1,0 +1,21 @@
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: $special-font;
+  font-display: swap;
+  src: url("https://dl.dropboxusercontent.com/s/ee92ttx6jyc1sru/Inter-Medium.woff2") format("woff2"),
+       url("https://dl.dropboxusercontent.com/s/858yrhbrv2u3ow6/Inter-Medium.woff") format("woff");
+  mso-generic-font-family: swiss;
+  mso-font-alt: "Arial";
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: $special-font;
+  font-display: swap;
+  src: url("https://dl.dropboxusercontent.com/s/4huuqfskk66gk5b/Inter-Bold.woff2") format("woff2"),
+       url("https://dl.dropboxusercontent.com/s/1je17rm6y35cm3t/Inter-Bold.woff") format("woff");
+  mso-generic-font-family: swiss;
+  mso-font-alt: "Arial";
+}

@@ -1,0 +1,27 @@
+// Colors
+// ---------------------------------
+
+// Default
+
+$color-default-black:               #000000;
+$color-default-white:               #ffffff;
+
+// Project palette
+// для нейминга цветов https://www.htmlcsscolor.com/hex/334482
+
+$color-wite-smoke:                  #f5f5f5;
+$color-myrtle:                      #2a610e;
+$color-mantle:                      #92ae84;
+$color-suva-grey:                   #8b8b8b;
+
+// Fonts
+// ---------------------------------
+
+$special-font: ("Inter");
+$basic-font: ("Arial", sans-serif);
+$font-stack: join($special-font, $basic-font);
+
+// Viewports
+// ---------------------------------
+
+$vp-596:                            596px;

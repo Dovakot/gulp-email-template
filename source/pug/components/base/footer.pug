@@ -1,0 +1,71 @@
+mixin footer
+  -
+    const nav = [
+      {
+        text: "Link 1",
+        link: "#"
+      },
+      {
+        text: "Link 2",
+        link: "#"
+      },
+    ]
+
+  -
+    const socials = [
+      {
+        image: "https://via.placeholder.com/26x26.png",
+        alt: "whatsapp",
+        link: "https://www.whatsapp.com/",
+      },
+      {
+        image: "https://via.placeholder.com/26x26.png",
+        alt: "vk",
+        link: "https://vk.com/",
+      },
+      {
+        image: "https://via.placeholder.com/26x26.png",
+        alt: "github",
+        link: "https://github.com/",
+      }
+    ]
+
+  table.footer(width="100%")
+    tr
+      td.stack-row(align="center")
+        <!--[if mso | IE]>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+        <td width="50%" valign="top">
+        <![endif]-->
+        div.stack-column
+          table(width="100%")
+            tr
+              td.footer__nav(align="left")
+                h3.footer__title Lorem ipsum dolor sit amet, consectetur adipiscing elit
+
+                each item in nav
+                  p
+                    a(href=item.link, target="_blank", rel="nofollow noopener")= item.text
+        <!--[if mso | IE]>
+        </td><td width="50%" valign="top">
+        <![endif]-->
+        div.stack-column
+          table(width="100%")
+            tr
+              td.mobile-text-left.footer__contacts(align="right")
+                h3.footer__title Donec a libero lacinia, commodo nibh nec, interdum sem
+                p.footer__phone
+                  a(href="tel:+78120000000", target="_blank", rel="nofollow noopener") +7(812)&nbsp;000&nbsp;00&nbsp;00
+
+                table.footer__socials
+                  tr
+                    each item in socials
+                      td
+                        a(href=item.link, target="_blank", rel="nofollow noopener")
+                          img(src=item.image, alt=item.alt, width="26", height="26")
+        <!--[if mso | IE]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
